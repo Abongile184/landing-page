@@ -1,0 +1,352 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Hero New', sans-serif;
+}
+
+
+
+/* this is the header content */
+.header-parent{
+    width: 100%;
+    height: 100vh;
+    background-color: #1F2937;
+
+}
+
+.header{
+    
+    width: 70%;
+   
+    margin:auto;
+  
+}
+
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+    
+  }
+  
+  .left {
+    display: inline;
+    float:right;
+    
+  }
+  .right{
+    display: inline;
+    float: left;
+  }
+
+ a{
+    font-size: 18px;
+    color:#E5E7EB;
+  }
+
+  a {
+    text-decoration: none;
+   
+ }
+
+ li{
+    list-style-type: none;
+ }
+ 
+
+
+img{
+    vertical-align: top;
+}
+
+#header-logo-text{
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+#main-text-one{
+    font-size:48px;
+    font-weight: 800;
+    margin-bottom: -10px;
+    margin-top: -10px;
+}
+
+#main-text-two{
+ font-size: xx-small;
+ color:#E5E7EB;
+}
+
+button{
+
+    background-color:#3882F6;
+    border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.main-text{
+    display: block;
+    float: left;
+    margin-top:200px;
+    margin-left: -340px;
+    border: 0px solid green;
+   width: 450px;
+   height: 250px;
+   font-size:20px;
+   font-weight: 800;
+   color: #f9faf8;
+   
+}
+
+/* this part is the slide show on the first page */
+#slideshow{
+    display: block;
+    float: right;
+    margin-top:200px;
+    margin-right: -250px;
+    border: 1px solid #1F2937;
+    width: 450px;
+   height: 250px;
+   overflow: hidden;
+}
+
+/* Style each of the sides
+    with a fixed width and height */
+     
+    .slide {
+        float:left ;
+        height: 450px;
+        width: 460px;
+    }
+
+/* Add animation to the slides */
+     
+.slide-wrapper {
+         
+    /* Calculate the total width on the
+  basis of number of slides */
+    width: calc(460px * 4);
+     
+    /* Specify the animation with the
+  duration and speed */
+    animation: slide 10s ease infinite;
+}
+
+
+    /* Define the animation
+    for the slideshow */
+     
+    @keyframes slide {
+         
+        /* Calculate the margin-left for
+      each of the slides */
+       0%, 20% {
+            margin-left: 0px;
+        }
+        25%, 45% {
+            margin-left: calc(-460px * 1);
+        }
+        55%, 65% {
+            margin-left: calc(-460px * 2);
+        }
+        70%, 80% {
+            margin-left: calc(-460px * 3);
+        }
+        85%, 100%{
+            margin-left: calc(-460px * 4);
+        }
+        
+    }
+
+
+/* this is the body content */
+
+/* first part */
+.content-one{
+  width: 100%;
+  min-height: 100%;
+    background-color:#f9faf8;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title-heading{
+    text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 140px;
+  margin-top: 15px;
+  color: #1F2936;
+}
+
+.info-row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .info {
+    text-align: center;
+    margin: 0 10px;
+    max-width: 200px;
+  }
+
+  
+
+  #sample{
+    width:100px;
+    height: 100px;
+    border: 1px solid #3882F6;
+    border-radius: 15px;
+    padding: 30px;
+  }
+
+/* second part */
+.content-two{
+    background-color: #E5E7EB ;
+    width: 100%;
+    min-height: 100%;
+}
+
+#heading-title-two{
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  font-weight: 800;
+  color: #1F2936;
+
+}
+
+.review-one{
+  display: flex;
+  justify-content: center;
+  width:450px;
+  margin:auto;
+  position:relative;
+  padding: 10px;
+}
+
+
+.review-two{
+  position:relative;
+  display: flex;
+  justify-content: center;
+  width:450px;
+  margin:auto;
+  padding:10px;
+  margin-top: 20px;
+  margin-left:260px;
+  
+}
+
+.review-three{
+  position:relative;
+  display: flex;
+  justify-content: center;
+  width:450px;
+  margin:auto;
+  padding:10px;
+  margin-top: 20px;
+  margin-right:260px;
+  
+}
+
+.review-four{
+  position:relative;
+  display: flex;
+  justify-content: center;
+  width:450px;
+  margin:auto;
+  padding:10px;
+  margin-top: 20px;
+  margin-left:260px;
+  
+}
+
+
+.author, .author-two, .author-three, .author-four{
+  position: absolute;
+  right: 20px;
+  top:80px;
+  font-weight:bold;
+  }
+
+  .author-four{
+    position: absolute;
+  right: 20px;
+  top:160px;
+  font-weight:bold;
+  }
+
+
+/* third part */
+.content-three {
+  background-color: #f9faf8;
+  width: 100%;
+  min-height: 100vh; /* Use viewport height to ensure full page height */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.call-to-action {
+  font-weight: bolder;
+  color:white;
+  border: 1px solid none;
+  border-radius: 20px;
+  width: 70%;
+  height: 150px;
+  display: flex; /* Use flexbox for span and button alignment */
+  justify-content: space-between; /* Distribute items to opposite ends */
+  align-items: center; /* Center vertically */
+  padding:25px;
+  background-color:#3882F6;
+}
+
+.call-to-action span {
+  flex: 1; /* Occupy remaining space */
+  margin-left: 25px;
+}
+
+.call-to-action button {
+  background-color: #3882F6;
+  color: white;
+  padding: 10px 20px;
+  width:140px;
+  border: 2px solid #f9faf8;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+/* this is the footer content */
+.footer{
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:white;
+  background-color: #1F2937;
+  
+}
+
+ #copyright{
+  margin-left: 5px;
+  margin-right: 5px ;
+}
